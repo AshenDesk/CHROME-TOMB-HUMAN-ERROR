@@ -1,5 +1,7 @@
 <p align="center">
-  <img src="assets/banner.svg" alt="CHROME TOMB // HUMAN ERROR — um monólito cromado vigiado por drones-sentinela num terminal cyberpunk" width="100%">
+  <a href="https://ashendesk.github.io/CHROME-TOMB-HUMAN-ERROR/">
+    <img src="assets/banner.svg" alt="CHROME TOMB // HUMAN ERROR — um monólito cromado vigiado por drones-sentinela num terminal cyberpunk" width="100%">
+  </a>
 </p>
 
 <h1 align="center">CHROME TOMB // HUMAN ERROR</h1>
@@ -8,6 +10,12 @@
   <em>Dungeon-crawler de texto cyberpunk que roda direto no navegador.<br>
   Infiltre o Datavault Omega. Não acorde o ARCHON K-9.</em>
 </p>
+
+<div align="center">
+
+[Clique aqui para jogar!](https://ashendesk.github.io/CHROME-TOMB-HUMAN-ERROR/)
+
+</div>
 
 <p align="center">
   <img alt="Status: Alpha" src="https://img.shields.io/badge/status-alpha-b48bff?style=flat-square">
