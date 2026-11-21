@@ -126,6 +126,8 @@ Algumas zonas alteram o descanso: **Refúgio Neon, Mercado e Dreno** são calmos
 
 ## Mundo e progressão
 
+<img src="assets/alpha7-district.png" alt="Alpha7 District Map" width="100%">
+
 ### Mapa do hub (grade 3×3)
 
 ```
