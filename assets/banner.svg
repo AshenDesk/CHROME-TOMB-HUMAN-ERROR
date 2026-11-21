@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 400" width="1280" height="400" role="img" aria-labelledby="t d">
+  <title id="t">CHROME TOMB // HUMAN ERROR</title>
+  <desc id="d">Banner ilustrativo: um monólito cromado sob vigilância de drones-sentinela em um terminal cyberpunk, com o título CHROME TOMB // HUMAN ERROR.</desc>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#04060a"/>
+      <stop offset="1" stop-color="#0b1219"/>
+    </linearGradient>
+    <radialGradient id="glowC" cx="0.18" cy="0.1" r="0.7">
+      <stop offset="0" stop-color="#39e0c2" stop-opacity="0.20"/>
+      <stop offset="1" stop-color="#39e0c2" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowV" cx="0.86" cy="0.55" r="0.55">
+      <stop offset="0" stop-color="#b48bff" stop-opacity="0.26"/>
+      <stop offset="1" stop-color="#b48bff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="chrome" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0d141b"/>
+      <stop offset="0.28" stop-color="#6f8795"/>
+      <stop offset="0.5" stop-color="#d8eef5"/>
+      <stop offset="0.72" stop-color="#5d7482"/>
+      <stop offset="1" stop-color="#0b1117"/>
+    </linearGradient>
+    <linearGradient id="beam" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#39e0c2" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#39e0c2" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#39e0c2" stroke-opacity="0.06" stroke-width="1"/>
+    </pattern>
+    <pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="1" fill="#000" fill-opacity="0.22"/>
+    </pattern>
+    <filter id="blur6" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="6"/></filter>
+    <filter id="blur2" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="2"/></filter>
+    <clipPath id="frame"><rect width="1280" height="400" rx="18"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <rect width="1280" height="400" fill="url(#bg)"/>
+    <rect width="1280" height="400" fill="url(#glowC)"/>
+    <rect width="1280" height="400" fill="url(#glowV)"/>
+    <rect width="1280" height="400" fill="url(#grid)"/>
+
+    <!-- horizonte / piso do setor -->
+    <path d="M0 322H1280" stroke="#39e0c2" stroke-opacity="0.35" stroke-width="1"/>
+    <g stroke="#39e0c2" stroke-opacity="0.10" stroke-width="1">
+      <path d="M640 322L-40 400M640 322L200 400M640 322L420 400M640 322L640 400M640 322L860 400M640 322L1080 400M640 322L1320 400"/>
+      <path d="M0 340H1280M0 362H1280M0 388H1280"/>
+    </g>
+
+    <!-- cabos pendentes -->
+    <g fill="none" stroke="#b48bff" stroke-opacity="0.35" stroke-width="2">
+      <path d="M760 0C768 70 742 96 752 160"/>
+      <path d="M812 0C806 52 828 84 820 128"/>
+      <path d="M1180 0C1172 60 1196 92 1186 150"/>
+    </g>
+
+    <!-- monólito cromado: o "túmulo" -->
+    <g transform="translate(1000 0)">
+      <ellipse cx="90" cy="330" rx="150" ry="20" fill="#b48bff" fill-opacity="0.18" filter="url(#blur6)"/>
+      <path d="M40 330L58 52L122 52L140 330Z" fill="url(#chrome)" stroke="#9fc4d2" stroke-opacity="0.5" stroke-width="1.5"/>
+      <path d="M58 52L90 30L122 52Z" fill="#cfe9f1" fill-opacity="0.85"/>
+      <!-- rachadura glitch -->
+      <path d="M86 52L96 112L82 150L100 206L88 262" fill="none" stroke="#04060a" stroke-width="3"/>
+      <path d="M86 52L96 112L82 150L100 206L88 262" fill="none" stroke="#39e0c2" stroke-opacity="0.8" stroke-width="1" filter="url(#blur2)"/>
+      <!-- olho do Archon -->
+      <rect x="64" y="128" width="52" height="9" rx="4.5" fill="#ff4d6d" filter="url(#blur2)"/>
+      <rect x="68" y="130.5" width="44" height="4" rx="2" fill="#ffd0d8"/>
+      <!-- placas de glitch -->
+      <rect x="44" y="200" width="30" height="6" fill="#39e0c2" fill-opacity="0.55"/>
+      <rect x="104" y="218" width="30" height="4" fill="#b48bff" fill-opacity="0.7"/>
+      <rect x="50" y="246" width="22" height="3" fill="#ff4d6d" fill-opacity="0.6"/>
+    </g>
+
+    <!-- drones-sentinela com cones de varredura (rede do Archon) -->
+    <g>
+      <path d="M910 110L1034 138L1034 120Z" fill="url(#beam)" transform="translate(-0 0)"/>
+      <g transform="translate(900 108)">
+        <circle r="13" fill="#0e161e" stroke="#39e0c2" stroke-width="2"/>
+        <circle r="5" fill="#39e0c2"/>
+        <path d="M-22 0H-13M13 0H22M0 -22V-13" stroke="#39e0c2" stroke-width="2" stroke-linecap="round"/>
+      </g>
+      <path d="M850 232L1034 196L1034 214Z" fill="url(#beam)" fill-opacity="0.8"/>
+      <g transform="translate(840 236)">
+        <circle r="11" fill="#0e161e" stroke="#b48bff" stroke-width="2"/>
+        <circle r="4" fill="#b48bff"/>
+        <path d="M-19 0H-11M11 0H19M0 -19V-11" stroke="#b48bff" stroke-width="2" stroke-linecap="round"/>
+      </g>
+      <g transform="translate(962 286)" opacity="0.85">
+        <circle r="8" fill="#0e161e" stroke="#39e0c2" stroke-width="1.5"/>
+        <circle r="3" fill="#39e0c2"/>
+      </g>
+      <!-- linhas de telemetria drone -> central -->
+      <g fill="none" stroke="#ff4d6d" stroke-opacity="0.55" stroke-width="1" stroke-dasharray="3 5">
+        <path d="M900 108L1090 132"/><path d="M840 236L1070 200"/><path d="M962 286L1086 246"/>
+      </g>
+    </g>
+
+    <!-- título -->
+    <g font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'DejaVu Sans Mono','Liberation Mono',monospace" font-weight="700">
+      <text x="64" y="64" font-size="15" fill="#39e0c2" fill-opacity="0.9" letter-spacing="3">ALPHA-7 // SETOR ADMINISTRATIVO // ACESSO NEGADO</text>
+
+      <!-- camadas glitch -->
+      <text x="60" y="176" font-size="92" fill="#ff4d6d" fill-opacity="0.55">CHROME TOMB</text>
+      <text x="68" y="172" font-size="92" fill="#39e0c2" fill-opacity="0.55">CHROME TOMB</text>
+      <text x="64" y="174" font-size="92" fill="#eaf6fb">CHROME TOMB</text>
+
+      <text x="64" y="232" font-size="44" fill="#b48bff">// HUMAN ERROR<tspan fill="#39e0c2" dx="10">█<animate attributeName="fill-opacity" values="1;1;0;0" dur="1.1s" repeatCount="indefinite"/></tspan></text>
+    </g>
+
+    <g font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'DejaVu Sans Mono','Liberation Mono',monospace" fill="#9fb4c2">
+      <text x="64" y="276" font-size="17">Dungeon-crawler de texto em terminal. Infiltre o Datavault Omega.</text>
+      <text x="64" y="302" font-size="17">Não acorde o ARCHON K-9.</text>
+      <text x="64" y="356" font-size="14" fill="#39e0c2" fill-opacity="0.85" letter-spacing="1">&gt; usar cifra  &gt; hackear  &gt; extrair</text>
+    </g>
+
+    <rect width="1280" height="400" fill="url(#scan)"/>
+    <rect x="1" y="1" width="1278" height="398" rx="17" fill="none" stroke="#39e0c2" stroke-opacity="0.35"/>
+  </g>
+</svg>
